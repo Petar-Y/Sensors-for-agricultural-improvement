@@ -1,0 +1,30 @@
+Централен Сървър и Управление на Данни:
+
+CLASS CentralServer
+    ATTRIBUTE sensors
+    ATTRIBUTE database
+
+    METHOD initialize()
+        SET self.sensors = []
+        SET self.database = {}
+
+    METHOD register_sensor(sensor)
+        ADD sensor TO self.sensors
+
+    METHOD receive_data(sensor_id, data)
+        IF sensor_id IN self.sensors
+            STORE data IN self.database UNDER sensor_id
+
+    METHOD process_data()
+        FOR EACH sensor_id, data IN self.database
+            ANALYZE data
+            IF critical_conditions_detected(data)
+                SEND alert TO user_interface
+
+    METHOD analyze_data()
+        # Анализ на историческите данни
+        PERFORM data_analysis ON self.database
+
+    METHOD provide_recommendations()
+        # Препоръки на базата на анализа
+        RETURN recommendations_based_on_analysis(self.database)

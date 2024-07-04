@@ -1,0 +1,22 @@
+Дефиниция на Системните Компоненти:
+
+CLASS Sensor
+    ATTRIBUTE id
+    ATTRIBUTE type
+    ATTRIBUTE location
+    ATTRIBUTE data
+
+    METHOD initialize(id, type, location)
+        SET self.id = id
+        SET self.type = type
+        SET self.location = location
+        SET self.data = {}
+
+    METHOD read_data()
+        # Имитация на прочитане на данни от датчика
+        RETURN random_value_based_on_sensor_type(self.type)
+
+    METHOD transmit_data()
+        # Предаване на данни към централния сървър
+        SEND self.data TO central_server
+
