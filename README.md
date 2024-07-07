@@ -8,12 +8,4 @@
   
 - [Документация за Система за Мониторинг на Почвата и Въздуха.pdf](https://github.com/user-attachments/files/16107052/1.pdf)
 
-- Псевдокод [Главна Програма (Операционна Логика).txt](https://github.com/user-attachments/files/16107086/default.txt)
-  
-- Псевдокод [Уеб Приложение (Потребителски Интерфейс).txt](https://github.com/user-attachments/files/16107101/default.txt)
-  
-- Псевдокод [Централен Сървър и Управление на Данни.txt](https://github.com/user-attachments/files/16107116/default.txt)
-  
-- Псевдокод [Дефиниция на Системните Компоненти.txt](https://github.com/user-attachments/files/16107147/default.txt)
-
 - [Soil-and-Air-Monitoring-System.zip](https://github.com/user-attachments/files/16107006/Soil-and-Air-Monitoring-System-20240702124621.1.zip)
